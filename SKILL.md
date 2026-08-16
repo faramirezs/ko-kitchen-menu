@@ -1,6 +1,6 @@
 ---
 name: kokitchen-menu
-description: Weekly KoKitchen lunch-menu publishing pipeline. Data-driven generator in the ko-kitchen-menu repo: edit per-location JSONs (dishes, EN/DE titles and descriptions, allergen codes, prices, week label/dates), render one-A4 print menus for both locations (KK and SRH), generate SumUp POS import CSVs, verify layout in a browser, commit and push so GitHub Pages serves them. Use when the user asks to update the weekly menu, change any dish/title/description/allergen/price/week date, regenerate the print menus, or produce the POS import files.
+description: "Weekly KoKitchen lunch-menu publishing pipeline. Data-driven generator in the ko-kitchen-menu repo: edit per-location JSONs (dishes, EN/DE titles and descriptions, allergen codes, prices, week label/dates), render one-A4 print menus for both locations (KK and SRH), generate SumUp POS import CSVs, verify layout in a browser, commit and push so GitHub Pages serves them. Use when the user asks to update the weekly menu, change any dish/title/description/allergen/price/week date, regenerate the print menus, or produce the POS import files."
 allowed-tools: Bash(python3:*), Bash(git:*), Bash(gh:*)
 ---
 
