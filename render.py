@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Render menu.html from menu.json + template.html (stdlib only).
 
-Weekly workflow: edit menu.json (or tell the assistant what changed),
-then run:  python3 render.py
-Commit the generated menu.html and push -- GitHub Pages serves it.
+Weekly workflow: edit kk-menu.json / srh-menu.json (or tell the assistant
+what changed), then run:  python3 render.py kk && python3 render.py srh
+Then generate POS import files:  python3 pos_import.py
+Commit the generated HTML + CSVs and push -- GitHub Pages serves them.
 """
 import html
 import json
