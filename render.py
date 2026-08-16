@@ -71,20 +71,24 @@ def chips(lang, codes):
     return "".join('<span class="alg" title="%s">%s</span>' % (titles[c], c) for c in codes)
 
 
-def item_html(lang, item):
+def item_html(lang, item, extra=""):
     label = "Allergens" if lang == "en" else "Allergene"
     name = html.escape(item["name_" + lang])
     desc = html.escape(item["desc_" + lang])
     price = html.escape(item.get("price", ""))
     price_html = '<span class="price">%s</span>' % price if price else ""
-    return (
-        '      <div class="item">\n'
+    rows = [
+        "      <div class=\"item\">",
         '        <div class="name-row">'
-        '<div class="name" contenteditable="true">%s</div>%s</div>\n'
-        '        <div class="desc" contenteditable="true">%s</div>\n'
-        '        <div class="alg-row"><span class="alg-label">%s</span>%s</div>\n'
-        "      </div>"
-    ) % (name, price_html, desc, label, chips(lang, item["allergens"]))
+        '<div class="name" contenteditable="true">%s</div>%s</div>' % (name, price_html),
+        '        <div class="desc" contenteditable="true">%s</div>' % desc,
+    ]
+    if extra:
+        rows.append(extra)
+    rows.append('        <div class="alg-row"><span class="alg-label">%s</span>%s</div>'
+                % (label, chips(lang, item["allergens"])))
+    rows.append("      </div>")
+    return "\n".join(rows)
 
 
 def day_html(lang, day):
@@ -100,13 +104,17 @@ def day_html(lang, day):
 
 def daily_html(lang, daily):
     title = "DAILY" if lang == "en" else "TÄGLICH"
+    extra = ""
+    note = daily.get("note_" + lang, "")
+    if note:
+        extra = '        <div class="dish-note" contenteditable="true">%s</div>' % html.escape(note)
     return (
         "    <article class=\"day daily\">\n"
         "      <div class=\"day-title\" contenteditable=\"true\">%s</div>\n"
         "%s\n"
         "%s\n"
         "    </article>"
-    ) % (title, item_html(lang, daily), BADGES)
+    ) % (title, item_html(lang, daily, extra), BADGES)
 
 
 def main():
