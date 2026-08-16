@@ -9,6 +9,7 @@ import html
 import json
 import pathlib
 import re
+import sys
 
 ROOT = pathlib.Path(__file__).parent
 
@@ -95,16 +96,19 @@ def day_html(lang, day):
 
 
 def main():
-    data = json.loads((ROOT / "menu.json").read_text(encoding="utf-8"))
+    location = sys.argv[1] if len(sys.argv) > 1 else "kk"
+    data = json.loads((ROOT / (location + "-menu.json")).read_text(encoding="utf-8"))
     template = (ROOT / "template.html").read_text(encoding="utf-8")
 
     days_en = "\n".join(day_html("en", d) for d in data["days"])
     days_de = "\n".join(day_html("de", d) for d in data["days"])
 
+    download = "%s-menu-%s" % (location, data["kw"])
+
     html = (
         template.replace("{{WEEK}}", data["week_label"])
         .replace("{{DATE}}", data["date"])
-        .replace("{{KW_DL}}", data["kw"])
+        .replace("{{DOWNLOAD_NAME}}", download)
         .replace("{{DAYS_EN}}", days_en)
         .replace("{{DAYS_DE}}", days_de)
     )
@@ -114,8 +118,9 @@ def main():
     if leftovers:
         raise SystemExit("Unconsumed placeholders: %s" % sorted(set(leftovers)))
 
-    (ROOT / "menu.html").write_text(html, encoding="utf-8")
-    print("menu.html written:", (ROOT / "menu.html").stat().st_size, "bytes")
+    out = ROOT / (location + "-print-menu.html")
+    out.write_text(html, encoding="utf-8")
+    print(out.name, "written:", out.stat().st_size, "bytes")
 
 
 if __name__ == "__main__":
