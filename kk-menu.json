@@ -9,7 +9,9 @@
     "name_de": "KoKitchen Signature Curry mit Basmatireis",
     "desc_de": "Fruchtige Ananasnoten, saisonales Gemüse, mariniertes Sonnenblumenprotein.",
     "note_de": "Auch erhältlich mit zart mariniertem Hähnchen (halal) anstelle von Sonnenblumenprotein.",
-    "allergens": ["F"]
+    "allergens": [
+      "F"
+    ]
   },
   "days": [
     {
@@ -17,18 +19,22 @@
       "title_de": "MONTAG",
       "items": [
         {
-          "name_en": "Vegan Lasagna with Salad",
-          "desc_en": "Oven-baked vegan lasagna. Served with a fresh side salad.",
-          "name_de": "Vegane Lasagne mit Salat",
-          "desc_de": "Ofengebackene vegane Lasagne. Dazu ein frischer Beilagensalat.",
-          "allergens": ["A"]
+          "name_en": "Golden Vegan Lasagna",
+          "desc_en": "Vegan lasagna with sunflower protein, fresh salad and house dressing",
+          "name_de": "Goldene vegane Lasagne",
+          "desc_de": "Vegane Lasagne mit Sonnenblumenprotein, frischem Salat und hausgemachtem Dressing.",
+          "allergens": [
+            "A"
+          ]
         },
         {
           "name_en": "Beef Lasagna with Salad",
-          "desc_en": "Oven-baked beef lasagna. Served with a fresh side salad.",
+          "desc_en": "Beef lasagna served with fresh salad and house dressing",
           "name_de": "Rinderlasagne mit Salat",
-          "desc_de": "Ofengebackene Rinderlasagne. Dazu ein frischer Beilagensalat.",
-          "allergens": ["A"]
+          "desc_de": "Rinderlasagne, serviert mit frischem Salat und hausgemachtem Dressing.",
+          "allergens": [
+            "A"
+          ]
         }
       ]
     },
@@ -38,17 +44,23 @@
       "items": [
         {
           "name_en": "Ginger-Soy Sunflower Bowl",
-          "desc_en": "Sunflower protein in a ginger-soy glaze. Served in a bowl.",
+          "desc_en": "Sunflower protein, rice and mixed vegetables in creamy ginger-soy sauce",
           "name_de": "Ingwer-Soja Sonnenblumen Bowl",
-          "desc_de": "Sonnenblumenprotein in Ingwer-Soja-Glasur. Serviert in der Bowl.",
-          "allergens": ["A", "F"]
+          "desc_de": "Sonnenblumenprotein, Reis und gemischtes Gemüse in cremiger Ingwer-Soja-Sauce.",
+          "allergens": [
+            "A",
+            "F"
+          ]
         },
         {
           "name_en": "Ginger-Soy Meatball Bowl",
-          "desc_en": "Meatballs in a ginger-soy glaze. Served in a bowl.",
+          "desc_en": "Meatballs, rice and mixed vegetables in creamy ginger-soy sauce",
           "name_de": "Ingwer-Soja Fleischbällchen Bowl",
-          "desc_de": "Fleischbällchen in Ingwer-Soja-Glasur. Serviert in der Bowl.",
-          "allergens": ["A", "F"]
+          "desc_de": "Fleischbällchen, Reis und gemischtes Gemüse in cremiger Ingwer-Soja-Sauce.",
+          "allergens": [
+            "A",
+            "F"
+          ]
         }
       ]
     },
@@ -57,18 +69,29 @@
       "title_de": "MITTWOCH",
       "items": [
         {
-          "name_en": "Roasted Vegan Maultaschen with Potato & Lentil Salad",
-          "desc_en": "Roasted vegan Maultaschen. Served with potato and lentil salad.",
-          "name_de": "Geröstete vegane Maultaschen mit Kartoffel- & Linsensalat",
-          "desc_de": "Geröstete vegane Maultaschen. Dazu Kartoffel- und Linsensalat.",
-          "allergens": ["A", "F", "L", "M"]
+          "name_en": "Vegan Maultaschen with Lentil Salad",
+          "desc_en": "Vegan Maultaschen served with potato salad and lentil salad",
+          "name_de": "Vegane Maultaschen mit Linsensalat",
+          "desc_de": "Vegane Maultaschen, serviert mit Kartoffelsalat und Linsensalat.",
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ]
         },
         {
-          "name_en": "Roasted Meat Maultaschen with Potato & Lentil Salad",
-          "desc_en": "Roasted meat Maultaschen. Served with potato and lentil salad.",
-          "name_de": "Geröstete Maultaschen mit Kartoffel- & Linsensalat",
-          "desc_de": "Geröstete Maultaschen. Dazu Kartoffel- und Linsensalat.",
-          "allergens": ["A", "C", "G", "L", "M"]
+          "name_en": "Maultaschen with Lentil Salad",
+          "desc_en": "Meat Maultaschen served with potato salad and lentil salad",
+          "name_de": "Maultaschen mit Linsensalat",
+          "desc_de": "Maultaschen mit Fleisch, serviert mit Kartoffelsalat und Linsensalat.",
+          "allergens": [
+            "A",
+            "C",
+            "G",
+            "L",
+            "M"
+          ]
         }
       ]
     },
@@ -77,18 +100,28 @@
       "title_de": "DONNERSTAG",
       "items": [
         {
-          "name_en": "Creamy Tofu & Mushroom Plate",
-          "desc_en": "Tofu in creamy mushroom sauce with peas and mashed potatoes.",
-          "name_de": "Tofu in Pilzsauce mit Erbsen und Kartoffelpüree",
-          "desc_de": "Tofu in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.",
-          "allergens": ["A", "F", "L", "M"]
+          "name_en": "Tofu & Mushroom Plate",
+          "desc_en": "Tofu, mashed potatoes and peas with creamy mushroom sauce and pickled onions",
+          "name_de": "Tofu & Pilzteller",
+          "desc_de": "Tofu, Kartoffelpüree und Erbsen in cremiger Pilzsauce mit eingelegten Zwiebeln.",
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ]
         },
         {
-          "name_en": "Creamy Köttbullar & Mushroom Plate",
-          "desc_en": "Köttbullar in creamy mushroom sauce with peas and mashed potatoes.",
-          "name_de": "Köttbullar in Pilzsauce mit Erbsen und Kartoffelpüree",
-          "desc_de": "Köttbullar in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.",
-          "allergens": ["A", "F", "L", "M"]
+          "name_en": "Köttbullar & Mushroom Plate",
+          "desc_en": "Köttbullar, mashed potatoes and peas with creamy mushroom sauce and pickled onions",
+          "name_de": "Köttbullar & Pilzteller",
+          "desc_de": "Köttbullar, Kartoffelpüree und Erbsen in cremiger Pilzsauce mit eingelegten Zwiebeln.",
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ]
         }
       ]
     }

@@ -31,15 +31,15 @@
   .date{position:absolute;right:0;top:11mm;font-weight:800;font-size:16pt;color:var(--green);letter-spacing:-.2px;white-space:nowrap}
 
   .days{display:flex;flex-direction:column;gap:4.5mm}
-  .day{position:relative;border:1px solid var(--light-green);padding:4.5mm 24mm 4.2mm 4mm;min-height:37mm}
+  .day{position:relative;border:1px solid var(--light-green);padding:3.6mm 24mm 3.4mm 4mm;min-height:37mm}
   .day-title{position:absolute;top:-3.4mm;left:50%;transform:translateX(-50%);background:var(--paper);padding:0 8mm;color:var(--green);font-weight:800;letter-spacing:4.6mm;font-size:9pt;white-space:nowrap}
   .day-title::before,.day-title::after{content:"";position:absolute;top:1.8mm;width:26mm;height:2.6mm;background:var(--light-green)}
   .day-title::before{right:100%}
   .day-title::after{left:100%}
 
-  .item{margin:0 0 1.4mm 0}
+  .item{margin:0 0 0.9mm 0}
   .item:last-child{margin-bottom:0}
-  .name-row{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;margin-bottom:.8mm}
+  .name-row{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;margin-bottom:.6mm}
   .name{font-weight:800;font-size:11pt;line-height:1.15}
   .price{font-weight:800;font-size:11pt;color:var(--green);white-space:nowrap;transform:translateY(4mm)}
   .desc{font-size:10.6pt;line-height:1.22;max-width:140mm}
@@ -113,13 +113,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">MONDAY</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Vegan Lasagna with Salad</div></div>
-        <div class="desc" contenteditable="true">Oven-baked vegan lasagna. Served with a fresh side salad.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Golden Vegan Lasagna</div></div>
+        <div class="desc" contenteditable="true">Vegan lasagna with sunflower protein, fresh salad and house dressing</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span></div>
       </div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Beef Lasagna with Salad</div></div>
-        <div class="desc" contenteditable="true">Oven-baked beef lasagna. Served with a fresh side salad.</div>
+        <div class="desc" contenteditable="true">Beef lasagna served with fresh salad and house dressing</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span></div>
       </div>
       <div class="badges">
@@ -131,12 +131,12 @@
       <div class="day-title" contenteditable="true">TUESDAY</div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Ginger-Soy Sunflower Bowl</div></div>
-        <div class="desc" contenteditable="true">Sunflower protein in a ginger-soy glaze. Served in a bowl.</div>
+        <div class="desc" contenteditable="true">Sunflower protein, rice and mixed vegetables in creamy ginger-soy sauce</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span></div>
       </div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Ginger-Soy Meatball Bowl</div></div>
-        <div class="desc" contenteditable="true">Meatballs in a ginger-soy glaze. Served in a bowl.</div>
+        <div class="desc" contenteditable="true">Meatballs, rice and mixed vegetables in creamy ginger-soy sauce</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span></div>
       </div>
       <div class="badges">
@@ -147,13 +147,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">WEDNESDAY</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Roasted Vegan Maultaschen with Potato &amp; Lentil Salad</div></div>
-        <div class="desc" contenteditable="true">Roasted vegan Maultaschen. Served with potato and lentil salad.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Vegan Maultaschen with Lentil Salad</div></div>
+        <div class="desc" contenteditable="true">Vegan Maultaschen served with potato salad and lentil salad</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Roasted Meat Maultaschen with Potato &amp; Lentil Salad</div></div>
-        <div class="desc" contenteditable="true">Roasted meat Maultaschen. Served with potato and lentil salad.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Maultaschen with Lentil Salad</div></div>
+        <div class="desc" contenteditable="true">Meat Maultaschen served with potato salad and lentil salad</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Eggs">C</span><span class="alg" title="Milk">G</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
       <div class="badges">
@@ -164,13 +164,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">THURSDAY</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Creamy Tofu &amp; Mushroom Plate</div></div>
-        <div class="desc" contenteditable="true">Tofu in creamy mushroom sauce with peas and mashed potatoes.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Tofu &amp; Mushroom Plate</div></div>
+        <div class="desc" contenteditable="true">Tofu, mashed potatoes and peas with creamy mushroom sauce and pickled onions</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Creamy Köttbullar &amp; Mushroom Plate</div></div>
-        <div class="desc" contenteditable="true">Köttbullar in creamy mushroom sauce with peas and mashed potatoes.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Köttbullar &amp; Mushroom Plate</div></div>
+        <div class="desc" contenteditable="true">Köttbullar, mashed potatoes and peas with creamy mushroom sauce and pickled onions</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
       <div class="badges">
@@ -215,13 +215,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">MONTAG</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Vegane Lasagne mit Salat</div></div>
-        <div class="desc" contenteditable="true">Ofengebackene vegane Lasagne. Dazu ein frischer Beilagensalat.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Goldene vegane Lasagne</div></div>
+        <div class="desc" contenteditable="true">Vegane Lasagne mit Sonnenblumenprotein, frischem Salat und hausgemachtem Dressing.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span></div>
       </div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Rinderlasagne mit Salat</div></div>
-        <div class="desc" contenteditable="true">Ofengebackene Rinderlasagne. Dazu ein frischer Beilagensalat.</div>
+        <div class="desc" contenteditable="true">Rinderlasagne, serviert mit frischem Salat und hausgemachtem Dressing.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span></div>
       </div>
       <div class="badges">
@@ -233,12 +233,12 @@
       <div class="day-title" contenteditable="true">DIENSTAG</div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Ingwer-Soja Sonnenblumen Bowl</div></div>
-        <div class="desc" contenteditable="true">Sonnenblumenprotein in Ingwer-Soja-Glasur. Serviert in der Bowl.</div>
+        <div class="desc" contenteditable="true">Sonnenblumenprotein, Reis und gemischtes Gemüse in cremiger Ingwer-Soja-Sauce.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span></div>
       </div>
       <div class="item">
         <div class="name-row"><div class="name" contenteditable="true">Ingwer-Soja Fleischbällchen Bowl</div></div>
-        <div class="desc" contenteditable="true">Fleischbällchen in Ingwer-Soja-Glasur. Serviert in der Bowl.</div>
+        <div class="desc" contenteditable="true">Fleischbällchen, Reis und gemischtes Gemüse in cremiger Ingwer-Soja-Sauce.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span></div>
       </div>
       <div class="badges">
@@ -249,13 +249,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">MITTWOCH</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Geröstete vegane Maultaschen mit Kartoffel- &amp; Linsensalat</div></div>
-        <div class="desc" contenteditable="true">Geröstete vegane Maultaschen. Dazu Kartoffel- und Linsensalat.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Vegane Maultaschen mit Linsensalat</div></div>
+        <div class="desc" contenteditable="true">Vegane Maultaschen, serviert mit Kartoffelsalat und Linsensalat.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Geröstete Maultaschen mit Kartoffel- &amp; Linsensalat</div></div>
-        <div class="desc" contenteditable="true">Geröstete Maultaschen. Dazu Kartoffel- und Linsensalat.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Maultaschen mit Linsensalat</div></div>
+        <div class="desc" contenteditable="true">Maultaschen mit Fleisch, serviert mit Kartoffelsalat und Linsensalat.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Eier">C</span><span class="alg" title="Milch">G</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
       <div class="badges">
@@ -266,13 +266,13 @@
     <article class="day">
       <div class="day-title" contenteditable="true">DONNERSTAG</div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Tofu in Pilzsauce mit Erbsen und Kartoffelpüree</div></div>
-        <div class="desc" contenteditable="true">Tofu in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Tofu &amp; Pilzteller</div></div>
+        <div class="desc" contenteditable="true">Tofu, Kartoffelpüree und Erbsen in cremiger Pilzsauce mit eingelegten Zwiebeln.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
       <div class="item">
-        <div class="name-row"><div class="name" contenteditable="true">Köttbullar in Pilzsauce mit Erbsen und Kartoffelpüree</div></div>
-        <div class="desc" contenteditable="true">Köttbullar in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.</div>
+        <div class="name-row"><div class="name" contenteditable="true">Köttbullar &amp; Pilzteller</div></div>
+        <div class="desc" contenteditable="true">Köttbullar, Kartoffelpüree und Erbsen in cremiger Pilzsauce mit eingelegten Zwiebeln.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
       <div class="badges">
