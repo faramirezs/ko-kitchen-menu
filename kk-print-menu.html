@@ -51,10 +51,9 @@
   .alg{min-width:4.4mm;height:4.4mm;padding:0 1mm;border:1px solid var(--green);border-radius:1mm;background:#fff;color:var(--green);font-size:7pt;font-weight:800;line-height:1;display:inline-flex;align-items:center;justify-content:center}
   .alg.todo{border:1.2px dashed var(--warn);color:var(--warn)}
 
-  /* --- Badges: bigger + bold --- */
-  .badge{position:absolute;right:6mm;width:15mm;height:15mm;border:1.5px solid var(--green);border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--green);font-size:7pt;font-weight:800;letter-spacing:.04em;line-height:1;background:var(--paper)}
-  .badge.vegan{top:4.5mm}
-  .badge.halal{top:21.5mm}
+  /* --- Badges: pair vertically centered in the day box --- */
+  .badges{position:absolute;right:6mm;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:2mm}
+  .badge{width:15mm;height:15mm;border:1.5px solid var(--green);border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--green);font-size:7pt;font-weight:800;letter-spacing:.04em;line-height:1;background:var(--paper)}
 
   /* --- Upright leaf (SVG, fixed orientation) --- */
   .leaf{width:6.2mm;height:6.2mm;margin-bottom:.8mm;color:var(--green);display:block}
@@ -106,8 +105,10 @@
         <div class="dish-note" contenteditable="true">Also available with tender marinated chicken (halal) instead of sunflower protein.</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Soybeans">F</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">MONDAY</div>
@@ -121,8 +122,10 @@
         <div class="desc" contenteditable="true">Oven-baked beef lasagna. Served with a fresh side salad.</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">TUESDAY</div>
@@ -136,8 +139,10 @@
         <div class="desc" contenteditable="true">Meatballs in a ginger-soy glaze. Served in a bowl.</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">WEDNESDAY</div>
@@ -151,8 +156,10 @@
         <div class="desc" contenteditable="true">Roasted meat Maultaschen. Served with potato and lentil salad.</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Eggs">C</span><span class="alg" title="Milk">G</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">THURSDAY</div>
@@ -166,8 +173,10 @@
         <div class="desc" contenteditable="true">Köttbullar in creamy mushroom sauce with peas and mashed potatoes.</div>
         <div class="alg-row"><span class="alg-label">Allergens</span><span class="alg" title="Cereals containing gluten">A</span><span class="alg" title="Soybeans">F</span><span class="alg" title="Celery">L</span><span class="alg" title="Mustard">M</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
 </main>
 
@@ -198,8 +207,10 @@
         <div class="dish-note" contenteditable="true">Auch erhältlich mit zart mariniertem Hähnchen (halal) anstelle von Sonnenblumenprotein.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Sojabohnen">F</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">MONTAG</div>
@@ -213,8 +224,10 @@
         <div class="desc" contenteditable="true">Ofengebackene Rinderlasagne. Dazu ein frischer Beilagensalat.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">DIENSTAG</div>
@@ -228,8 +241,10 @@
         <div class="desc" contenteditable="true">Fleischbällchen in Ingwer-Soja-Glasur. Serviert in der Bowl.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">MITTWOCH</div>
@@ -243,8 +258,10 @@
         <div class="desc" contenteditable="true">Geröstete Maultaschen. Dazu Kartoffel- und Linsensalat.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Eier">C</span><span class="alg" title="Milch">G</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
     <article class="day">
       <div class="day-title" contenteditable="true">DONNERSTAG</div>
@@ -258,8 +275,10 @@
         <div class="desc" contenteditable="true">Köttbullar in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.</div>
         <div class="alg-row"><span class="alg-label">Allergene</span><span class="alg" title="Glutenhaltiges Getreide">A</span><span class="alg" title="Sojabohnen">F</span><span class="alg" title="Sellerie">L</span><span class="alg" title="Senf">M</span></div>
       </div>
-      <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
-      <div class="badge halal"><span>HALAL</span></div>
+      <div class="badges">
+        <div class="badge vegan"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/><path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg><span>VEGAN</span></div>
+        <div class="badge halal"><span>HALAL</span></div>
+      </div>
     </article>
 </main>
 

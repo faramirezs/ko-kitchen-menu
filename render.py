@@ -53,13 +53,15 @@ TODO_TITLES = {
 }
 
 BADGES = (
-    '      <div class="badge vegan">'
+    '      <div class="badges">\n'
+    '        <div class="badge vegan">'
     '<svg class="leaf" viewBox="0 0 24 24" aria-hidden="true">'
     '<path fill="currentColor" d="M11 12.5C6 12.5 2.8 9.3 2.8 3.2 8.2 3.2 11 6.5 11 12.5z"/>'
     '<path fill="currentColor" d="M13 12.5c5 0 8.2-3.2 8.2-9.3-5.4 0-8.2 3.3-8.2 9.3z"/>'
     '<path d="M12 13v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>'
     '</svg><span>VEGAN</span></div>\n'
-    '      <div class="badge halal"><span>HALAL</span></div>'
+    '        <div class="badge halal"><span>HALAL</span></div>\n'
+    '      </div>'
 )
 
 

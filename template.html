@@ -51,10 +51,9 @@
   .alg{min-width:4.4mm;height:4.4mm;padding:0 1mm;border:1px solid var(--green);border-radius:1mm;background:#fff;color:var(--green);font-size:7pt;font-weight:800;line-height:1;display:inline-flex;align-items:center;justify-content:center}
   .alg.todo{border:1.2px dashed var(--warn);color:var(--warn)}
 
-  /* --- Badges: bigger + bold --- */
-  .badge{position:absolute;right:6mm;width:15mm;height:15mm;border:1.5px solid var(--green);border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--green);font-size:7pt;font-weight:800;letter-spacing:.04em;line-height:1;background:var(--paper)}
-  .badge.vegan{top:4.5mm}
-  .badge.halal{top:21.5mm}
+  /* --- Badges: pair vertically centered in the day box --- */
+  .badges{position:absolute;right:6mm;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:2mm}
+  .badge{width:15mm;height:15mm;border:1.5px solid var(--green);border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--green);font-size:7pt;font-weight:800;letter-spacing:.04em;line-height:1;background:var(--paper)}
 
   /* --- Upright leaf (SVG, fixed orientation) --- */
   .leaf{width:6.2mm;height:6.2mm;margin-bottom:.8mm;color:var(--green);display:block}
