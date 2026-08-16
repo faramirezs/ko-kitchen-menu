@@ -2,6 +2,13 @@
   "kw": "kw34",
   "week_label": "KW34",
   "date": "17.08.26 - 21.08.26",
+  "daily": {
+    "name_en": "KoKitchen Signature Curry",
+    "desc_en": "Fruity pineapple notes and seasonal vegetables, served with marinated sunflower protein and basmati rice.",
+    "name_de": "KoKitchen Signature Curry",
+    "desc_de": "Mit fruchtigen Ananasnoten und saisonalem Gemüse, serviert mit mariniertem Sonnenblumenprotein und Basmatireis.",
+    "allergens": []
+  },
   "days": [
     {
       "title_en": "MONDAY",

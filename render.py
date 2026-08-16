@@ -98,6 +98,17 @@ def day_html(lang, day):
     ) % (day["title_" + lang], items, BADGES)
 
 
+def daily_html(lang, daily):
+    title = "DAILY" if lang == "en" else "TÄGLICH"
+    return (
+        "    <article class=\"day daily\">\n"
+        "      <div class=\"day-title\" contenteditable=\"true\">%s</div>\n"
+        "%s\n"
+        "%s\n"
+        "    </article>"
+    ) % (title, item_html(lang, daily), BADGES)
+
+
 def main():
     location = sys.argv[1] if len(sys.argv) > 1 else "kk"
     data = json.loads((ROOT / (location + "-menu.json")).read_text(encoding="utf-8"))
@@ -105,6 +116,9 @@ def main():
 
     days_en = "\n".join(day_html("en", d) for d in data["days"])
     days_de = "\n".join(day_html("de", d) for d in data["days"])
+    if data.get("daily"):
+        days_en = daily_html("en", data["daily"]) + "\n" + days_en
+        days_de = daily_html("de", data["daily"]) + "\n" + days_de
 
     download = "%s-menu-%s" % (location, data["kw"])
 

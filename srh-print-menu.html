@@ -21,28 +21,28 @@
   .toolbar span{opacity:.8;margin-left:4px}
   .note{font-size:12px;opacity:.8}
 
-  .page{width:210mm;height:297mm;background:var(--paper);margin:12mm auto;position:relative;padding:16mm 9mm 11mm 9mm;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.12)}
+  .page{width:210mm;height:297mm;background:var(--paper);margin:12mm auto;position:relative;padding:14mm 9mm 11mm 9mm;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.12)}
 
-  .top{height:45mm;position:relative}
-  .logo{position:absolute;left:7mm;top:0;width:74mm;height:auto;user-select:none}
+  .top{height:26mm;position:relative}
+  .logo{position:absolute;left:7mm;top:0;width:46mm;height:auto;user-select:none}
   .logo-fallback{position:absolute;left:7mm;top:2mm;display:none;user-select:none;color:var(--green)}
   .lf-name{font-size:26pt;font-weight:800;letter-spacing:-.5px;line-height:1}
   .lf-sub{font-size:8pt;font-weight:700;letter-spacing:4px;text-transform:uppercase;margin-top:2mm}
   .date{position:absolute;right:0;top:11mm;font-weight:800;font-size:16pt;color:var(--green);letter-spacing:-.2px;white-space:nowrap}
 
-  .days{display:flex;flex-direction:column;gap:8mm}
-  .day{position:relative;border:1px solid var(--light-green);padding:5.5mm 24mm 5.2mm 4mm;min-height:38mm}
+  .days{display:flex;flex-direction:column;gap:4.5mm}
+  .day{position:relative;border:1px solid var(--light-green);padding:4.5mm 24mm 4.2mm 4mm;min-height:37mm}
   .day-title{position:absolute;top:-3.4mm;left:50%;transform:translateX(-50%);background:var(--paper);padding:0 8mm;color:var(--green);font-weight:800;letter-spacing:4.6mm;font-size:9pt;white-space:nowrap}
   .day-title::before,.day-title::after{content:"";position:absolute;top:1.8mm;width:26mm;height:2.6mm;background:var(--light-green)}
   .day-title::before{right:100%}
   .day-title::after{left:100%}
 
-  .item{margin:0 0 2.4mm 0}
+  .item{margin:0 0 1.4mm 0}
   .item:last-child{margin-bottom:0}
   .name-row{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;margin-bottom:.8mm}
   .name{font-weight:800;font-size:11pt;line-height:1.15}
   .price{font-weight:800;font-size:11pt;color:var(--green);white-space:nowrap;transform:translateY(4mm)}
-  .desc{font-size:10.6pt;line-height:1.25;max-width:140mm}
+  .desc{font-size:10.6pt;line-height:1.22;max-width:140mm}
 
   /* --- Allergen letter codes (LMIV 1169/2011 Buchstabencode) --- */
   .alg-row{display:flex;gap:1.2mm;align-items:center;margin-top:1.2mm;flex-wrap:wrap}
@@ -82,7 +82,6 @@
 
 <div class="toolbar">
   <button onclick="window.print()">Print / Save as PDF</button>
-  <button onclick="downloadHTML()">Download edited HTML</button>
   <span>Click any menu text to edit. The page is set to A4 portrait for printing.</span>
 </div>
 
@@ -257,20 +256,6 @@ function logoFallback(img){
 document.querySelectorAll('.logo').forEach(function(img){
   if(img.src.indexOf('PASTE_LOGO_DATA_URI_HERE')!==-1 || (img.complete && img.naturalWidth===0)) logoFallback(img);
 });
-
-function downloadHTML(){
-  const clone=document.documentElement.cloneNode(true);
-  clone.querySelector('.toolbar')?.remove();
-  const html='<!DOCTYPE html>\n'+clone.outerHTML;
-  const blob=new Blob([html],{type:'text/html;charset=utf-8'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  a.download='srh-menu-kw34edited.html';
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  setTimeout(()=>URL.revokeObjectURL(a.href),500);
-}
 </script>
 </body>
 </html>
