@@ -75,13 +75,16 @@ def item_html(lang, item):
     label = "Allergens" if lang == "en" else "Allergene"
     name = html.escape(item["name_" + lang])
     desc = html.escape(item["desc_" + lang])
+    price = html.escape(item.get("price", ""))
+    price_html = '<span class="price">%s</span>' % price if price else ""
     return (
         '      <div class="item">\n'
-        '        <div class="name" contenteditable="true">%s</div>\n'
+        '        <div class="name-row">'
+        '<div class="name" contenteditable="true">%s</div>%s</div>\n'
         '        <div class="desc" contenteditable="true">%s</div>\n'
         '        <div class="alg-row"><span class="alg-label">%s</span>%s</div>\n'
         "      </div>"
-    ) % (name, desc, label, chips(lang, item["allergens"]))
+    ) % (name, price_html, desc, label, chips(lang, item["allergens"]))
 
 
 def day_html(lang, day):

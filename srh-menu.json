@@ -12,14 +12,20 @@
           "desc_en": "Oven-baked vegan lasagna. Served with a fresh side salad.",
           "name_de": "Vegane Lasagne mit Salat",
           "desc_de": "Ofengebackene vegane Lasagne. Dazu ein frischer Beilagensalat.",
-          "allergens": ["A"]
+          "allergens": [
+            "A"
+          ],
+          "price": "9,90 €"
         },
         {
           "name_en": "Beef Lasagna with Salad",
           "desc_en": "Oven-baked beef lasagna. Served with a fresh side salad.",
           "name_de": "Rinderlasagne mit Salat",
           "desc_de": "Ofengebackene Rinderlasagne. Dazu ein frischer Beilagensalat.",
-          "allergens": ["A"]
+          "allergens": [
+            "A"
+          ],
+          "price": "10,90 €"
         }
       ]
     },
@@ -32,14 +38,22 @@
           "desc_en": "Sunflower protein in a ginger-soy glaze. Served in a bowl.",
           "name_de": "Ingwer-Soja Sonnenblumen Bowl",
           "desc_de": "Sonnenblumenprotein in Ingwer-Soja-Glasur. Serviert in der Bowl.",
-          "allergens": ["A", "F"]
+          "allergens": [
+            "A",
+            "F"
+          ],
+          "price": "9,90 €"
         },
         {
           "name_en": "Ginger-Soy Meatball Bowl",
           "desc_en": "Meatballs in a ginger-soy glaze. Served in a bowl.",
           "name_de": "Ingwer-Soja Fleischbällchen Bowl",
           "desc_de": "Fleischbällchen in Ingwer-Soja-Glasur. Serviert in der Bowl.",
-          "allergens": ["A", "F"]
+          "allergens": [
+            "A",
+            "F"
+          ],
+          "price": "10,90 €"
         }
       ]
     },
@@ -52,14 +66,27 @@
           "desc_en": "Roasted vegan Maultaschen. Served with potato and lentil salad.",
           "name_de": "Geröstete vegane Maultaschen mit Kartoffel- & Linsensalat",
           "desc_de": "Geröstete vegane Maultaschen. Dazu Kartoffel- und Linsensalat.",
-          "allergens": ["A", "F", "L", "M"]
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ],
+          "price": "9,90 €"
         },
         {
           "name_en": "Roasted Meat Maultaschen with Potato & Lentil Salad",
           "desc_en": "Roasted meat Maultaschen. Served with potato and lentil salad.",
           "name_de": "Geröstete Maultaschen mit Kartoffel- & Linsensalat",
           "desc_de": "Geröstete Maultaschen. Dazu Kartoffel- und Linsensalat.",
-          "allergens": ["A", "C", "G", "L", "M"]
+          "allergens": [
+            "A",
+            "C",
+            "G",
+            "L",
+            "M"
+          ],
+          "price": "10,90 €"
         }
       ]
     },
@@ -72,14 +99,26 @@
           "desc_en": "Tofu in creamy mushroom sauce with peas and mashed potatoes.",
           "name_de": "Tofu in Pilzsauce mit Erbsen und Kartoffelpüree",
           "desc_de": "Tofu in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.",
-          "allergens": ["A", "F", "L", "M"]
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ],
+          "price": "9,90 €"
         },
         {
           "name_en": "Creamy Köttbullar & Mushroom Plate",
           "desc_en": "Köttbullar in creamy mushroom sauce with peas and mashed potatoes.",
           "name_de": "Köttbullar in Pilzsauce mit Erbsen und Kartoffelpüree",
           "desc_de": "Köttbullar in cremiger Pilzsauce mit Erbsen und Kartoffelpüree.",
-          "allergens": ["A", "F", "L", "M"]
+          "allergens": [
+            "A",
+            "F",
+            "L",
+            "M"
+          ],
+          "price": "10,90 €"
         }
       ]
     }
