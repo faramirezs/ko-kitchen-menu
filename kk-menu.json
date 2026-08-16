@@ -11,6 +11,18 @@
     "note_de": "Auch erhältlich mit zart mariniertem Hähnchen (halal) anstelle von Sonnenblumenprotein.",
     "allergens": [
       "F"
+    ],
+    "pos": [
+      {
+        "name": "KK Curry Vegan",
+        "price": "9,90 €",
+        "desc": "Fruchtige Ananasnoten, saisonales Gemüse, mariniertes Sonnenblumenprotein, dazu Basmatireis."
+      },
+      {
+        "name": "KK Curry Chicken",
+        "price": "10,90 €",
+        "desc": "Fruchtige Ananasnoten, saisonales Gemüse, zart mariniertes Hähnchen (halal), dazu Basmatireis."
+      }
     ]
   },
   "days": [

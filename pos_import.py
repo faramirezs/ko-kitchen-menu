@@ -81,8 +81,14 @@ def build(location):
     rows = []
     if location == "kk" and "daily" in data:
         daily = data["daily"]
-        desc = daily["desc_de"] + " " + daily["note_de"]
-        rows.append(item_row(daily["name_en"], desc, DAILY_PRICE))
+        if "pos" in daily:
+            for pi in daily["pos"]:
+                rows.append(item_row(pi["name"],
+                                     pi.get("desc", daily["desc_de"]),
+                                     price_num(pi["price"])))
+        else:
+            desc = daily["desc_de"] + " " + daily["note_de"]
+            rows.append(item_row(daily["name_en"], desc, DAILY_PRICE))
 
     for day in data["days"]:
         for it in day["items"]:
